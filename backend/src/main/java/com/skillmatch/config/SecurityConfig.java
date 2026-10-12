@@ -26,7 +26,7 @@ public class SecurityConfig {
     @Bean PasswordEncoder passwordEncoder() { return new BCryptPasswordEncoder(); }
     @Bean CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration c = new CorsConfiguration();
-        c.setAllowedOrigins(List.of("http://localhost:5173", "http://127.0.0.1:5173"));
+        c.setAllowedOrigins(List.of("http://localhost:5173", "http://127.0.0.1:5173" , "https://24eg105r41.netlify.app"));
         c.setAllowedMethods(List.of("GET","POST","PUT","PATCH","DELETE","OPTIONS"));
         c.setAllowedHeaders(List.of("*"));
         UrlBasedCorsConfigurationSource s = new UrlBasedCorsConfigurationSource();
